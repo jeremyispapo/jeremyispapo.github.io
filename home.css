@@ -163,24 +163,41 @@ footer a {
     }
 
     a {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    .principal {
+        flex-wrap: wrap;
+    }
+
+    .descripcion-principal{
+        width: 100%;
+        justify-content: center;
+    }
+
+    figure {
+        display: none;
     }
 
     .titulo {
-        font-size: 2.1rem;
+        font-size: 5.5rem;
+        flex-shrink: 1;
     }
     
     .grande {
-        font-size: 3.1rem;
+        font-size: 5.5rem;
+        flex-shrink: 3;
+
     }
 
     .descripcion-principal p {
-        font-size: 1.3rem;
+        font-size: 2.8rem;
+        line-height: 4rem;
     }
 
     .boton {
-        padding: 1rem 2rem;
-        font-size: 1.5rem;
+        padding: 2rem 3rem;
+        font-size: 2.8rem;
     }
 }
 
