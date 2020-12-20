@@ -142,19 +142,20 @@ footer a {
 }
 
 .burger-menu {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: rgba(75, 0, 130, .8);
     display: none;
     justify-content: center;
     align-items: center;
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     color: white;
     /* position: absolute; */
     position: fixed;
     left: 5px;
     top: 5px;
+    z-index: 100;
 }
 /*--------------MediaQueries----------*/
 
@@ -164,6 +165,11 @@ footer a {
         transition: all 1s;
         width: 60%;
     }
+
+    .principal{
+        margin-top: 7rem;
+    }
+
     .descripcion-principal p{
         font-weight: 500;
     }
@@ -177,7 +183,7 @@ footer a {
         justify-content: center;   
         align-items: center;
         position: fixed;
-        left: -100vh;
+        left: -100%;
         transition: .5s;
     }
 
