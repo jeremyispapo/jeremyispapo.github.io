@@ -26,6 +26,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin-top: 3em;
 }
 
 nav {
@@ -126,12 +127,11 @@ footer{
     height: 50px;
     border-radius: 50%;
     background: rgba(75, 0, 130, .8);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     font-size: 1.4em;
     color: white;
-    /* position: absolute; */
     position: fixed;
     left: 5px;
     top: 5px;
@@ -159,6 +159,11 @@ footer{
         position: fixed;
         left: -100%;
         transition: .5s;
+        margin-top: 0;
+    }
+
+    .burger-menu{
+        display: flex;
     }
 
     header.menu-active {

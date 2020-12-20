@@ -1,6 +1,6 @@
 const menu = document.querySelector('header');
 const burgerButtom = document.querySelector('.burger-menu');
-const mobile = window.matchMedia('screen and (max-width: 767px)')
+const mobile = window.matchMedia('screen and (max-width: 768px)')
 
 // burgerButtom.addEventListener('click', hideShow);
 
