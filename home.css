@@ -137,8 +137,25 @@ footer {
 
 footer a {
     display: block;
+    font-size: 4rem;
+    text-decoration: none;
 }
 
+.burger-menu {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(75, 0, 130, .8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1rem;
+    color: white;
+    /* position: absolute; */
+    position: fixed;
+    left: 5px;
+    top: 5px;
+}
 /*--------------MediaQueries----------*/
 
 @media screen and (max-width:1024px) {
@@ -154,16 +171,37 @@ footer a {
 
 @media screen and (max-width:768px) {
     header {
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
+        background-color: #452a9f;
+        justify-content: center;   
+        align-items: center;
+        position: fixed;
+        left: -100vh;
+        transition: .5s;
+    }
+
+    header.menu-active {
+        left: 0;
+    }
+
+    nav {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .enlaces {
-        transition: all 1s;
-        width: 70%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
-    a {
+    .enlaces a, nav a {
         font-size: 2.5rem;
+        padding: 1rem 0;
+        text-decoration: none;
     }
 
     .principal {
@@ -198,6 +236,10 @@ footer a {
     .boton {
         padding: 2rem 3rem;
         font-size: 2.8rem;
+    }
+
+    .burger-menu{
+        display: flex;
     }
 }
 
