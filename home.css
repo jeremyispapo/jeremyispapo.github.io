@@ -85,12 +85,6 @@ main {
     line-height: 2.5rem;
 }
 
-.encapsulador {
-    display: block;
-    text-decoration: none;
-    margin: auto;
-}
-
 .boton {
     display: block;
     color: #fff;
@@ -103,6 +97,7 @@ main {
     border: none;
     margin: 30px auto;
     transition: .5s;
+    text-decoration: none;
 }
 
 .boton:hover {
