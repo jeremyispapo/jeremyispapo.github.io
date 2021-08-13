@@ -139,7 +139,6 @@ nav a {
 }
 
 .card__text {
-    height: 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,6 +155,11 @@ nav a {
 .card__p {
     text-align: center;
     font-style: italic;
+}
+.card__p.card__p--services{
+    display: flex;
+    align-items: center;
+    height:7rem;
 }
 
 .html {
