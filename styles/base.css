@@ -31,7 +31,7 @@ img {
 /* ======== Estilos =========*/
 
 header {
-    background: rgb(200,255,187);
+    background: rgb(201, 255, 189);
     background: linear-gradient(45deg, rgba(200,255,187,1) 0%, rgba(54,143,54,1) 100%);
 }
 
@@ -234,4 +234,127 @@ footer {
     text-align: center;
     align-items: center;
     font-size: 1.6rem;
+}
+
+#btn {
+    width: 6rem;
+    height: 6rem;
+    position:fixed;
+    background-color: rgb(46, 247, 147);
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: 9999rem;
+    background-image: url(../assets/icons/moon.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+body.dark {
+    background-color:rgb(36, 36, 36);
+}
+body.dark header {
+    background: hsl(109, 20%, 57%);
+    background: linear-gradient(45deg, hsl(109, 20%, 57%) 0%, rgb(31, 83, 31) 100%);
+}
+body.dark .title {
+    color:rgb(220, 220, 220);
+    border-block-end: rgb(199, 199, 199) solid .3rem;
+}
+
+body.dark .card {
+    box-shadow: 0px 0px 13px 0px rgb(17, 17, 17);
+}
+
+body.dark .card__title {
+    color: rgb(220, 220, 220);
+}
+
+body.dark .card__p {
+    color: rgb(220, 220, 220);
+}
+
+body.dark footer {
+    background: hsl(109, 20%, 57%);
+    background: linear-gradient(45deg, hsl(109, 20%, 57%) 0%, rgb(31, 83, 31) 100%);
+}
+
+body.dark .creditos {
+    background-color: rgb(36, 36, 36);
+}
+
+body.dark #btn {
+    background-image: url(../assets/icons/sun.svg);
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color:rgb(36, 36, 36);
+    }
+    header {
+        background: hsl(109, 20%, 57%);
+        background: linear-gradient(45deg, hsl(109, 20%, 57%) 0%, rgb(31, 83, 31) 100%);
+    }
+    .title {
+        color:rgb(220, 220, 220);
+        border-block-end: rgb(199, 199, 199) solid .3rem;
+    }
+
+    .card {
+        box-shadow: 0px 0px 13px 0px rgb(17, 17, 17);
+    }
+
+    .card__title {
+        color: rgb(220, 220, 220);
+    }
+
+    .card__p {
+        color: rgb(220, 220, 220);
+    }
+
+    footer {
+        background: hsl(109, 20%, 57%);
+        background: linear-gradient(45deg, hsl(109, 20%, 57%) 0%, rgb(31, 83, 31) 100%);
+    }
+
+    .creditos {
+        background-color: rgb(36, 36, 36);
+    }
+    #btn {
+        background-image: url(../assets/icons/sun.svg);
+    }
+
+
+    body.light {
+        background-color:white;
+    }
+    body.light header {
+        background: rgb(201, 255, 189);
+        background: linear-gradient(45deg, rgba(200,255,187,1) 0%, rgba(54,143,54,1) 100%);
+    }
+    body.light .title{
+        color:#100B00;
+        border-block-end: #100B00 solid .3rem;
+    }
+    body.link .card {
+        box-shadow: 0px 0px 13px 0px rgba(181,181,181,1);
+    }
+    body.light .card__title {
+        color: black
+    }
+    body.light .card__p {
+        color: black;
+    }
+    body.light footer {
+        background: rgb(200,255,187);
+        background: linear-gradient(45deg, rgba(200,255,187,1) 0%, rgba(54,143,54,1) 100%);
+    }
+    body.light .creditos {
+        background: #100B00;
+    }
+    body.light #btn {
+        background-image: url(../assets/icons/moon.svg);
+    }
 }
